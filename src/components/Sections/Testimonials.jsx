@@ -8,24 +8,27 @@ const testimonialsData = [
     content:
       "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!",
     authorImage: "images/customer-1.png",
-    authorName: "Helen Doe",
-    authorStatus: "Themeforest customer",
+    authorName: "Shibli Numani",
+    authorStatus: "Sr. Visual Designer / UX Designer",
+    authorwebsite: "http://www.shiblinumani.com/"
   },
   {
     id: 2,
     content:
-      "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!",
+      "His work was good with me. Fast response in communication, I recommend this developer for your satisfaction work.",
     authorImage: "images/customer-2.png",
-    authorName: "Jane Doe",
-    authorStatus: "Themeforest customer",
+    authorName: "Mohammad Kutub U.",
+    authorStatus: "Administrative Executive",
+    authorwebsite: "https://www.upwork.com/freelancers/~0150c32d90c1716839"
   },
   {
     id: 3,
     content:
-      "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!",
-    authorImage: "images/customer-2.png",
-    authorName: "Jane Doe",
-    authorStatus: "Themeforest customer",
+      "Thanks a million, I have really enjoyed working on this. I appreciate the tip as well and I recommend this person.",
+    authorImage: "images/customer-3.png",
+    authorName: "Shahriar Hoq Shubho",
+    authorStatus: "Job Placement Executive",
+    authorwebsite: "https://shahriar-shubho.netlify.app/"
   },
 ];
 

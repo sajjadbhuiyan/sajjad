@@ -1,7 +1,7 @@
 import React from "react";
 
 function Testimonial({
-  testimonial: { content, authorImage, authorName, authorStatus },
+  testimonial: { content, authorImage, authorName, authorStatus,authorwebsite },
 }) {
   return (
     <div className="testimonial-item">
@@ -14,7 +14,7 @@ function Testimonial({
           <img src={authorImage} alt="customer-name" />
         </div>
         <div className="info">
-          <h4>{authorName}</h4>
+          <a href={`${authorwebsite}`}><h4>{authorName}</h4></a>
           <span>{authorStatus}</span>
         </div>
       </div>

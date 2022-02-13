@@ -1,22 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
+  FaGithub,
+  FaLinkedin,
   FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
+  FaWhatsapp,
   FaDribbble,
 } from "react-icons/fa";
 
 const headerData = {
-  name: "Bako Doe",
+  name: "MD. Sajjad",
   designation: "Web Developer",
   imageThumb: "/images/logo.png",
   social: {
-    facebook: "https://facebook.com",
-    twitter: "https://twitter.com",
-    instagram: "https://www.instagram.com/",
-    youtue: "https://www.youtube.com/",
+    github: "https://github.com/sajjadbhuiyan",
+    linkedin: "https://www.linkedin.com/in/md-sajjad-bhuiyan-taki/",
+    facebook: "https://www.facebook.com/profile.php?id=100016734583853",
+    whatsapp: "https://wa.me/8801613922248",
     dribbble: "https://dribbble.com/",
   },
 };
@@ -60,10 +60,10 @@ function Header({ toggleHeader, toggleHandler }) {
           <span aria-hidden="true">&times;</span>
         </button>
         <div className="header-inner d-flex align-items-start flex-column">
-          <Link to="/multipage">
+          <Link to="/">
             <img src={headerData.imageThumb} alt={headerData.name} />
           </Link>
-          <Link to="/multipage" className="site-title dot mt-3">
+          <Link to="/" className="site-title dot mt-3">
             {headerData.name}
           </Link>
 
@@ -72,7 +72,7 @@ function Header({ toggleHeader, toggleHandler }) {
           <nav>
             <ul className="vertical-menu scrollspy">
               <li>
-                <Link to="/multipage">
+                <Link to="/">
                   <i className="icon-home"></i>Home
                 </Link>
               </li>
@@ -111,31 +111,31 @@ function Header({ toggleHeader, toggleHandler }) {
 
           <div className="footer mt-auto">
             <ul className="social-icons list-inline">
+              {!headerData.social.github ? null : (
+                <li className="list-inline-item">
+                  <a href={headerData.social.github}>
+                    <FaGithub/>
+                  </a>
+                </li>
+              )}
+              {!headerData.social.linkedin ? null : (
+                <li className="list-inline-item">
+                  <a href={headerData.social.linkedin}>
+                    <FaLinkedin />
+                  </a>
+                </li>
+              )}
               {!headerData.social.facebook ? null : (
                 <li className="list-inline-item">
                   <a href={headerData.social.facebook}>
-                    <FaFacebookF />
+                  <FaFacebookF />
                   </a>
                 </li>
               )}
-              {!headerData.social.twitter ? null : (
+              {!headerData.social.whatsapp ? null : (
                 <li className="list-inline-item">
-                  <a href={headerData.social.twitter}>
-                    <FaTwitter />
-                  </a>
-                </li>
-              )}
-              {!headerData.social.instagram ? null : (
-                <li className="list-inline-item">
-                  <a href={headerData.social.instagram}>
-                    <FaInstagram />
-                  </a>
-                </li>
-              )}
-              {!headerData.social.youtue ? null : (
-                <li className="list-inline-item">
-                  <a href={headerData.social.youtue}>
-                    <FaYoutube />
+                  <a href={headerData.social.whatsapp}>
+                    <FaWhatsapp />
                   </a>
                 </li>
               )}
@@ -149,7 +149,7 @@ function Header({ toggleHeader, toggleHandler }) {
             </ul>
 
             <span className="copyright">
-              &copy; {new Date().getFullYear()} Bako Template
+              &copy; {new Date().getFullYear()} MD. Sajjad Bhuiyan Taki
             </span>
           </div>
         </div>

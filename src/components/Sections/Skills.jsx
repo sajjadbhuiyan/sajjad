@@ -8,24 +8,55 @@ const skillData = {
   progressData: [
     {
       id: 1,
-      name: "Wordpress",
-      percentage: 85,
+      name: "javascript",
+      percentage: 70,
     },
     {
       id: 2,
-      name: "HTML & CSS",
-      percentage: 90,
+      name: "React.js",
+      percentage: 70,
     },
     {
       id: 3,
-      name: "jQuery",
+      name: "Next.js",
       percentage: 60,
     },
     {
       id: 4,
-      name: "Sketch",
-      percentage: 70,
+      name: "Redux.js",
+      percentage: 60,
     },
+    {
+      id: 5,
+      name: "Node & Express",
+      percentage: 50,
+    },
+    {
+      id: 6,
+      name: "MongoDB",
+      percentage: 50,
+    },
+    {
+      id: 7,
+      name: "Tailwind CSS",
+      percentage: 80,
+    },
+    {
+      id: 8,
+      name: "Bootstrap & react bootstrap",
+      percentage: 90,
+    },
+    {
+      id: 9,
+      name: "Wordpress",
+      percentage: 85,
+    },
+    {
+      id: 10,
+      name: "Git",
+      percentage: 80,
+    },
+    
   ],
 };
 

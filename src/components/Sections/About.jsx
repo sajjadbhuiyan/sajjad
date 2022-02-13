@@ -1,15 +1,15 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const aboutData = {
-  cvpath: "media/empty.pdf",
+  cvpath: "media/Resume-of-Md_ Sajjad_Bhuiyan_Taki.pdf",
   image: "images/about.png",
-  name: "Bako Doe",
-  location: "London, UK",
-  birthday: "14 August, 1990",
-  email: "hello@bako.com",
+  name: "MD. Sajjad Bhuiyan Taki",
+  location: "Dhaka, Bangladesh",
+  birthday: "19 October, 2000",
+  email: "sajjadbhuiyan2018@gmail.com",
   aboutMe:
-    "I am Bako Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at wordpress.",
+    "I am MD. Sajjad, web developer from Dhaka, Bangladesh. I have rich experience in web site design and building and customization, Web Developer based on JS Environment. MERN Stack is my basic path now. But I am exploring other technologies and this is continuous....",
 };
 
 function About() {
@@ -42,9 +42,9 @@ function About() {
         <a href={aboutData.cvpath} className="btn btn-default mr-3">
           <i className="icon-cloud-download"></i>Download CV
         </a>
-        <ScrollLink
+        <Link
           activeClass="active"
-          to="section-contact"
+          to="/contact"
           spy={true}
           smooth={true}
           duration={500}
@@ -52,7 +52,7 @@ function About() {
           className="btn btn-alt mt-2 mt-md-0 mt-xs-2"
         >
           <i className="icon-envelope"></i>Hire me
-        </ScrollLink>
+        </Link>
       </div>
     </div>
   );

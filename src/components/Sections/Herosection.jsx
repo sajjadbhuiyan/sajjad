@@ -1,17 +1,17 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const herosectionData = {
-  name: "Bako Doe",
+  name: "MD Sajjad",
   aboutMe:
-    "He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+    "Web Developer based on JS Environment. MERN Stack is my basic path now. But I am exploring other technologies and this is continuous....",
 };
 
 function Herosection() {
   return (
     <section
       className="hero background parallax shadow-dark d-flex align-items-center"
-      style={{ backgroundImage: "url(/images/hero.jpg)" }}
+      style={{ backgroundImage: "url(/images/sajjadbg.png)" }}
     >
       <div className="cta mx-auto mt-2">
         <h1 className="mt-0 mb-4">
@@ -19,9 +19,9 @@ function Herosection() {
           <span className="dot"></span>
         </h1>
         <p className="mb-4">{herosectionData.aboutMe}</p>
-        <ScrollLink
+        <Link
           activeClass="active"
-          to="section-portfolios"
+          to="/works"
           spy={true}
           smooth={true}
           duration={500}
@@ -29,14 +29,14 @@ function Herosection() {
           className="btn btn-default btn-lg mr-3"
         >
           <i className="icon-grid"></i>View Portfolio
-        </ScrollLink>
+        </Link>
         <div
           className="spacer d-md-none d-lg-none d-sm-none"
           data-height="10"
         ></div>
-        <ScrollLink
+        <Link
           activeClass="active"
-          to="section-contact"
+          to="/contact"
           spy={true}
           smooth={true}
           duration={500}
@@ -44,7 +44,7 @@ function Herosection() {
           className="btn btn-border-light btn-lg"
         >
           <i className="icon-envelope"></i>Hire me
-        </ScrollLink>
+        </Link>
       </div>
       <div className="overlay"></div>
     </section>
