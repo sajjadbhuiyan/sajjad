@@ -8,11 +8,11 @@ const filters = [
   },
   {
     id: 2,
-    name: "Branding",
+    name: "Web-Development",
   },
   {
     id: 3,
-    name: "Creative",
+    name: "Branding",
   },
   {
     id: 4,
@@ -27,24 +27,24 @@ const filters = [
 const allData = [
   {
     id: 1,
-    name: "Creative Art",
-    category: ["creative"],
+    name: "SB Design and Printing",
+    category: ["web-development", "design"],
     image: "images/portfolio/1.jpg",
-    slug: "creative-art",
+    slug: "sb-printing",
   },
   {
     id: 2,
-    name: "Apple USB",
-    category: ["creative", "design"],
+    name: "Skola",
+    category: ["web-development", "design"],
     image: "images/portfolio/2.jpg",
-    slug: "apple-usb",
+    slug: "skola",
   },
   {
     id: 3,
-    name: "Work Space",
-    category: ["branding"],
+    name: "Wallet Gallery",
+    category: ["web-development", "design"],
     image: "images/portfolio/3.jpg",
-    slug: "work-space",
+    slug: "wallet-gallery",
   },
   {
     id: 4,
