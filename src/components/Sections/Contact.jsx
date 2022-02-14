@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 const contactData = {
   phone: ["+880 1613922248"],
   email: ["sajjadbhuiyan2018@gmail.com"],
-  location: "Pirpu, Dhaka, Bangladesh",
+  location: "Mirpur, Dhaka, Bangladesh",
 };
 
 function Contact() {
