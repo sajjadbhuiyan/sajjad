@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState,  useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const contactData = {
-  phone: ["+44 1632 960428"],
-  email: ["hello@bako.com"],
-  location: "West Palm Beach, 4669 Travis Street",
+  phone: ["+880 1613922248"],
+  email: ["sajjadbhuiyan2018@gmail.com"],
+  location: "Pirpu, Dhaka, Bangladesh",
 };
 
 function Contact() {
+  const form = useRef();
   const [formdata, setFormdata] = useState({
     name: "",
     email: "",
@@ -17,7 +19,7 @@ function Contact() {
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
-  const submitHandler = (event) => {
+  const sendEmail = (event) => {
     event.preventDefault();
     if (!formdata.name) {
       setError(true);
@@ -35,6 +37,13 @@ function Contact() {
       setError(false);
       setMessage("You message has been sent!!!");
     }
+
+    emailjs.sendForm('service_nic2eak', 'template_0r5v5ts', form.current, 'user_AzgonObsYXC1b2gqmjY0Z')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
 
   const handleChange = (event) => {
@@ -53,6 +62,13 @@ function Contact() {
       return null;
     }
   };
+
+
+  
+
+  // const  = (e) => {
+    
+  // };
 
   return (
     <div className="row">
@@ -85,7 +101,7 @@ function Contact() {
       </div>
 
       <div className="col-md-8">
-        <form className="contact-form" onSubmit={submitHandler}>
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <div className="row">
             <div className="column col-md-6">
               <div className="form-group">
