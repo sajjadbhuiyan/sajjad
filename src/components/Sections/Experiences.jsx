@@ -4,24 +4,24 @@ import Experience from "../Items/Experience";
 const experiencesData = [
   {
     id: 1,
-    year: "2019 - Present",
-    degree: "Academic Degree",
+    year: "2020 - Present",
+    degree: "Web Design and Development",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
+      "This is my patience place. I have 2 years of experience in a different place which was a tiny or well-known place like the Bangladesh Air Force. Mainly I am self-employed.",
   },
   {
     id: 2,
-    year: "2018 - 2015",
-    degree: "Bachelor’s Degree",
+    year: "2021 - 2021",
+    degree: "Graphics Designer at Volunteer for Bangladesh",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
+      "This job was a social collaboration with experience of awareness and noble task. I did Graphics Banner on the Facebook page and there any need.",
   },
   {
     id: 3,
-    year: "2015 - 2012",
-    degree: "Honours Degree",
+    year: "2020 - 2020",
+    degree: "Customer Care Executive at FIFO Tech",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.",
+      "This is my first corporate job. I have experienced corporate manner and etiquette from there.",
   },
 ];
 

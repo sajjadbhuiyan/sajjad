@@ -4,7 +4,9 @@ import Skill from "../Items/Skill";
 
 const skillData = {
   skillContent:
-    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks grove right at the coast of the Semantics",
+    `The skills mentioned below I have good skills in these technologies and I always try to make myself more skilled in these areas.
+    Butt is always trying to adapt to other technologies.\n
+    The more fact I am in these technologies, the more I am able to make my clients happy. And I got the result. Because I hope my clients always get the most out of me.`,
   progressData: [
     {
       id: 1,

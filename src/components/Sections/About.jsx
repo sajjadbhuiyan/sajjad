@@ -40,7 +40,7 @@ function About() {
           </div>
         </div>
         <a href={aboutData.cvpath} className="btn btn-default mr-3">
-          <i className="icon-cloud-download"></i>Download CV
+          <i className="icon-cloud-download"></i>Resume
         </a>
         <Link
           activeClass="active"
