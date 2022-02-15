@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Markdown from "markdown-to-jsx";
-import Disqus from "disqus-react";
+// import Disqus from "disqus-react";
 import fm from "front-matter";
 import Layout2 from "../components/Layout/Layout2";
 
@@ -31,12 +31,12 @@ function BlogDetails2(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const disqusShortname = "bako-1"; //found in your Disqus.com dashboard
-  const disqusConfig = {
-    url: "https://jthemes.net/themes/react/bako", //Homepage link of this site.
-    identifier: blogId,
-    title: blogFile,
-  };
+  // const disqusShortname = "bako-1"; //found in your Disqus.com dashboard
+  // const disqusConfig = {
+  //   url: "https://jthemes.net/themes/react/bako", //Homepage link of this site.
+  //   identifier: blogId,
+  //   title: blogFile,
+  // };
 
   // document.body.classList.add("dark");
   //Uncomment the above line if you use dark version
@@ -61,12 +61,12 @@ function BlogDetails2(props) {
         <div className="blog-content mt-4">
           <Markdown children={content}></Markdown>
         </div>
-        <div className="mi-blog-details-comments mt-4">
+        {/* <div className="mi-blog-details-comments mt-4">
           <Disqus.DiscussionEmbed
             shortname={disqusShortname}
             config={disqusConfig}
           />
-        </div>
+        </div> */}
       </section>
     </Layout2>
   );
