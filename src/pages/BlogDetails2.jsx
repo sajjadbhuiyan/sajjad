@@ -7,7 +7,7 @@ import Layout2 from "../components/Layout/Layout2";
 function BlogDetails2(props) {
   const [meta, setMeta] = useState("");
   const [content, setContent] = useState("");
-  const blogId = props.match.params.id;
+  // const blogId = props.match.params.id;
   const blogFile = props.match.params.title;
 
   useEffect(() => {
@@ -39,7 +39,7 @@ function BlogDetails2(props) {
   // };
 
   // document.body.classList.add("dark");
-  //Uncomment the above line if you use dark version
+  // Uncomment the above line if you use dark version
 
   return (
     <Layout2>
