@@ -3,15 +3,15 @@ import emailjs from '@emailjs/browser';
 
 const contactData = {
   phone: ["+880 1613922248"],
-  email: ["sajjadbhuiyan2018@gmail.com"],
+  myemail: ["sajjadbhuiyan2018@gmail.com"],
   location: "Mirpur, Dhaka, Bangladesh",
 };
 
 function Contact() {
-  const form = useRef();
+  
   const [formdata, setFormdata] = useState({
     name: "",
-    email: "",
+    user_email: "",
     subject: "",
     message: "",
   });
@@ -19,12 +19,13 @@ function Contact() {
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
+  const form = useRef();
   const sendEmail = (event) => {
     event.preventDefault();
     if (!formdata.name) {
       setError(true);
       setMessage("Name is required");
-    } else if (!formdata.email) {
+    } else if (!formdata.user_email) {
       setError(true);
       setMessage("Email is required");
     } else if (!formdata.subject) {
@@ -38,7 +39,7 @@ function Contact() {
       setMessage("You message has been sent!!!");
     }
 
-    emailjs.sendForm('service_nic2eak', 'template_0r5v5ts', form.current, 'user_AzgonObsYXC1b2gqmjY0Z')
+    emailjs.sendForm('service_nic2eak', 'template_cjrrdhg', form.current, 'user_AzgonObsYXC1b2gqmjY0Z')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -62,8 +63,6 @@ function Contact() {
       return null;
     }
   };
-
-
   
 
   // const  = (e) => {
@@ -86,7 +85,7 @@ function Contact() {
           <i className="icon-envelope"></i>
           <div className="details">
             <h5>Email address</h5>
-            {contactData.email.map((singleEmail, index) => (
+            {contactData.myemail.map((singleEmail, index) => (
               <span key={index}>{singleEmail}</span>
             ))}
           </div>
@@ -121,10 +120,10 @@ function Contact() {
                 <input
                   type="email"
                   className="form-control"
-                  name="email"
+                  name="user_email"
                   placeholder="Email address"
                   onChange={handleChange}
-                  value={formdata.email}
+                  value={formdata.user_email}
                 />
               </div>
             </div>
