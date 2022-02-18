@@ -83,10 +83,10 @@ const allData = [
   },
   {
     id: 9,
-    name: "Work Space",
-    category: ["branding"],
-    image: "images/portfolio/3.jpg",
-    slug: "work-space",
+    name: "LMS",
+    category: ["web-development", "design"],
+    image: "images/portfolio/9.jpg",
+    slug: "baf-lms",
   },
 ];
 
