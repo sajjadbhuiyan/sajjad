@@ -76,10 +76,10 @@ const allData = [
   },
   {
     id: 8,
-    name: "Apple USB",
-    category: ["creative", "design"],
-    image: "images/portfolio/2.jpg",
-    slug: "apple-usb",
+    name: "Yamak",
+    category: ["web-development", "design"],
+    image: "images/portfolio/8.jpg",
+    slug: "yamak-job-task",
   },
   {
     id: 9,
