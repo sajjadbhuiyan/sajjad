@@ -7,6 +7,7 @@ import Funfacts from "../components/Sections/Funfacts";
 import Testimonials from "../components/Sections/Testimonials";
 import Clients from "../components/Sections/Clients";
 
+
 function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
