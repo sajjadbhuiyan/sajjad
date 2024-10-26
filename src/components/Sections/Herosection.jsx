@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const herosectionData = {
   name: "MD Sajjad",
   aboutMe:
-    "Web Developer based on JS Environment. MERN Stack is my basic path now. But I am exploring other technologies and this is continuous....",
+    "Software Developer based on JS Environment.",
 };
 
 function Herosection() {
@@ -36,14 +36,14 @@ function Herosection() {
         ></div>
         <Link
           activeClass="active"
-          to="/contact"
+          to="/resume"
           spy={true}
           smooth={true}
           duration={500}
           offset={50}
           className="btn btn-border-light btn-lg"
         >
-          <i className="icon-envelope"></i>Hire me
+          <i className="icon-graduation"></i>Experience
         </Link>
       </div>
       <div className="overlay"></div>

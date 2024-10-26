@@ -5,19 +5,17 @@ import {
   FaLinkedin,
   FaFacebookF,
   FaWhatsapp,
-  FaDribbble,
 } from "react-icons/fa";
 
 const headerData = {
   name: "MD. Sajjad",
-  designation: "Web Developer",
+  designation: "Software Developer",
   imageThumb: "/images/logo.png",
   social: {
     github: "https://github.com/sajjadbhuiyan",
     linkedin: "https://www.linkedin.com/in/md-sajjad-bhuiyan-taki/",
     facebook: "https://www.facebook.com/profile.php?id=100016734583853",
     whatsapp: "https://wa.me/8801613922248",
-    dribbble: "https://dribbble.com/",
   },
 };
 
@@ -61,7 +59,7 @@ function Header({ toggleHeader, toggleHandler }) {
         </button>
         <div className="header-inner d-flex align-items-start flex-column">
           <Link to="/">
-            <img src={headerData.imageThumb} alt={headerData.name} />
+            <img src={headerData.imageThumb} alt={headerData.name} style={{ width: "150px", height: "auto" }}/>
           </Link>
           <Link to="/" className="site-title dot mt-3">
             {headerData.name}
@@ -81,11 +79,11 @@ function Header({ toggleHeader, toggleHandler }) {
                   <i className="icon-user"></i>About
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services">
                   <i className="icon-bulb"></i>Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/resume">
                   <i className="icon-graduation"></i>Experience
@@ -96,11 +94,11 @@ function Header({ toggleHeader, toggleHandler }) {
                   <i className="icon-grid"></i>Works
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/bloglist">
                   <i className="icon-pencil"></i>Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact">
                   <i className="icon-phone"></i>Contact
@@ -139,13 +137,13 @@ function Header({ toggleHeader, toggleHandler }) {
                   </a>
                 </li>
               )}
-              {!headerData.social.dribbble ? null : (
+              {/* {!headerData.social.dribbble ? null : (
                 <li className="list-inline-item">
                   <a href={headerData.social.dribbble}>
                     <FaDribbble />
                   </a>
                 </li>
-              )}
+              )} */}
             </ul>
 
             <span className="copyright">

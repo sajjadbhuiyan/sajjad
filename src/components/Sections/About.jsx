@@ -7,16 +7,20 @@ const aboutData = {
   name: "MD. Sajjad Bhuiyan Taki",
   location: "Dhaka, Bangladesh",
   birthday: "19 October, 2000",
-  email: "sajjadbhuiyan2018@gmail.com",
+  email: "sajjadbhuiyan2024@gmail.com",
   aboutMe:
-    "I am MD. Sajjad, web developer from Dhaka, Bangladesh. I have rich experience in web site design and building and customization, Web Developer based on JS Environment. MERN Stack is my basic path now. But I am exploring other technologies and this is continuous....",
+    "I am MD. Sajjad, a software developer based in Lisbon, Portugal. I possess extensive experience in problem-solving, logic development, and data structures, with a focus on SQL and NoSQL. My work involves existing applications, ensuring clean and rectified code within JavaScript-based web applications. The IT field is rapidly evolving, especially with the rise of AI. I am proficient in adapting to new technologies through documentation. Regarding timing, I strive to maintain a logical timeline for exploring new technologies, ensuring the optimal timing aligns with project needs. 🚀",
 };
 
 function About() {
   return (
     <div className="row">
       <div className="col-md-3">
-        <img src={aboutData.image} alt={aboutData.name} />
+      <img
+        src={aboutData.image}
+        alt={aboutData.name}
+        style={{ borderRadius: "5%", width: "100%", height: "auto", marginTop: "5px"}}
+      />
       </div>
       <div className="col-md-9">
         <h2 className="mt-4 mt-md-0 mb-4">Hello,</h2>
