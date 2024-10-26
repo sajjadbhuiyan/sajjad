@@ -1,2 +1,0 @@
-(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[10],{112:function(i,s,t){"use strict";t.r(s),s.default=t.p+"static/media/visiting-card.7b9f895d.md"}}]);
-//# sourceMappingURL=10.7128c49d.chunk.js.map
