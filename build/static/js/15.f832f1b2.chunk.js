@@ -1,0 +1,2 @@
+(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[15],{121:function(a,s,t){"use strict";t.r(s),s.default=t.p+"static/media/yalla-compare.ebb375fa.md"}}]);
+//# sourceMappingURL=15.f832f1b2.chunk.js.map

@@ -59,7 +59,7 @@ function Header({ toggleHeader, toggleHandler }) {
         </button>
         <div className="header-inner d-flex align-items-start flex-column">
           <Link to="/">
-            <img src={headerData.imageThumb} alt={headerData.name} style={{ width: "150px", height: "auto" }}/>
+            <img src={headerData.imageThumb} alt={headerData.name} style={{ width: "150px", height: "auto"}}/>
           </Link>
           <Link to="/" className="site-title dot mt-3">
             {headerData.name}

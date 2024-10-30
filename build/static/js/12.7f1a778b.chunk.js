@@ -1,0 +1,2 @@
+(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[12],{118:function(s,t,a){"use strict";a.r(t),t.default=a.p+"static/media/vector-graphics.2d0676de.md"}}]);
+//# sourceMappingURL=12.7f1a778b.chunk.js.map

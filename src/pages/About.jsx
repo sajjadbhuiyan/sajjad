@@ -3,9 +3,7 @@ import Layout2 from "../components/Layout/Layout2";
 import SectionHeading from "../components/Items/SectionHeading";
 import AboutSection from "../components/Sections/About";
 import Skills from "../components/Sections/Skills";
-import Funfacts from "../components/Sections/Funfacts";
 import Testimonials from "../components/Sections/Testimonials";
-import Clients from "../components/Sections/Clients";
 
 
 function About() {
@@ -24,14 +22,14 @@ function About() {
         <Skills />
       </section>
 
-      <Funfacts />
+      {/* <Funfacts /> */}
 
       <section className="shadow-blue white-bg padding">
         <SectionHeading title="Testimonials" />
         <Testimonials />
       </section>
 
-      <Clients />
+      {/* <Clients /> */}
     </Layout2>
   );
 }

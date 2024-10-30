@@ -1,2 +1,0 @@
-(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[14],{123:function(a,t,e){"use strict";e.r(t),t.default=e.p+"static/media/wallet-gallery.e8a5d03c.md"}}]);
-//# sourceMappingURL=14.e6855479.chunk.js.map

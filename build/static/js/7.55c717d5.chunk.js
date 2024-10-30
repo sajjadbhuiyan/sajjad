@@ -1,2 +1,0 @@
-(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[7],{116:function(s,t,a){"use strict";a.r(t),t.default=a.p+"static/media/js-prototypers.a1267de2.md"}}]);
-//# sourceMappingURL=7.55c717d5.chunk.js.map

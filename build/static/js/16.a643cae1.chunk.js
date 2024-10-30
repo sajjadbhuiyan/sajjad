@@ -1,2 +1,0 @@
-(this.webpackJsonpbako=this.webpackJsonpbako||[]).push([[16],{125:function(a,s,t){"use strict";t.r(s),s.default=t.p+"static/media/yamak-job-task.c4e59a84.md"}}]);
-//# sourceMappingURL=16.a643cae1.chunk.js.map
