@@ -141,7 +141,7 @@ const experiencesData = [
     city: "Dhaka",
     country: "Bangladesh",
     company_website: "https://fifo-tech.com/",
-    company_mail: "info@vbd.com.bd",
+    company_mail: "info@fifo-tech.com",
     sector: "BPO service provider",
     judged_link: "https://www.whatsable.app",
     judged_access: ["mail: sajjad@gmail.com", "password: test123456"],
